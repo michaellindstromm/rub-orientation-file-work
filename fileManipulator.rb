@@ -1,3 +1,5 @@
+require 'set'
+
 class FileManipulator
     
     def initialize(file1, file2)
@@ -23,7 +25,7 @@ class FileManipulator
         first_letter = Array.new
 
         makes.each do |m| 
-            car_hash[m] = nil
+            car_hash[mcM] = Set.new
         end 
 
         make_keys = car_hash.keys
@@ -46,7 +48,7 @@ class FileManipulator
         model_arr.each do |arr|
             first_letter.each do |f|
                 if f[0] == arr[0]
-                    car_hash[f[1]] = arr[1]
+                    car_hash[f[1]]<< arr[1]
                 else
                     
                 end

@@ -1,3 +1,5 @@
 T = Camry
 N = Altima
 H = Accord
+T = Highlander
+T = Tacoma
